@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Six of Crows",
+      "author": "Leigh Bardugo",
+      "borrowed": true,
+      "image": "img/six-of-crows.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Infernal Devices: Clockwork Angel",
+      "author": "Cassandra Clare",
+      "borrowed": false,
+      "image": "img/clock-angel.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Black Witch",
+      "author": "Laurie Forest",
+      "borrowed": false,
+      "image": "img/black-witch.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Cinder",
+      "author": "Marissa Meyer",
+      "borrowed": false,
+      "image": "img/cinder.jpg"
+    },
+    {
+      "id": 5,
+      "title": "A Court of Thorns and Roses",
+      "author": "Sarah J. Maas",
+      "borrowed": false,
+      "image": "img/thornes-and-roses.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Cruel Prince",
+      "author": "Holly Black",
+      "borrowed": false,
+      "image": "img/the-cruel-prince.jpg"
+    }
+  ]
+}
