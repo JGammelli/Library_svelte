@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Six of Crows",
       "author": "Leigh Bardugo",
-      "borrowed": true,
+      "borrowed": false,
       "image": "img/six-of-crows.jpg"
     },
     {
@@ -41,6 +41,55 @@
       "author": "Holly Black",
       "borrowed": false,
       "image": "img/the-cruel-prince.jpg"
+    },
+    {
+      "id": 7,
+      "title": "The Dark Crystel",
+      "author": "Jim Henson",
+      "borrowed": true,
+      "image": "img/dark-crystal.jpg"
+    },
+    {
+      "id": 8,
+      "title": "To Kill a Kingdom",
+      "author": "Alexandra Christo",
+      "borrowed": false,
+      "image": "img/to-kill-a-kingdom.jpg"
+    },
+    {
+      "id": 9,
+      "title": "The Bone Houses",
+      "author": "Emily Lloyd-Jones",
+      "borrowed": false,
+      "image": "img/the-bone-houses.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Sorcery of Thrones",
+      "author": "Margaret Rogerson",
+      "borrowed": false,
+      "image": "img/sorcery-of-thrones.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Enchantment of Ravens",
+      "author": "Margaret Rogerson",
+      "borrowed": false,
+      "image": "img/enchantment-of-ravens.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Winterwood",
+      "author": "Shea Ernshaw",
+      "borrowed": false,
+      "image": "img/winterwood.jpg"
+    },
+    {
+      "id": 13,
+      "title": "The Wicked Deep",
+      "author": "Shea Ernshaw",
+      "borrowed": false,
+      "image": "img/the-wicked-deep.jpg"
     }
   ]
 }

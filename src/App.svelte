@@ -18,9 +18,7 @@
 		color: whitesmoke;
 		text-align: center;
 	}
-	main{
-		
-	}
+
 	div{
 		position: absolute;
 		width: 50vw;
