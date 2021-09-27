@@ -1,4 +1,6 @@
 <script>
+    import { Link } from "svelte-routing";
+    import UpdateData, {borrow} from "./functions/UpdateData.svelte";
     export let book = {};
     
     
@@ -10,32 +12,19 @@
         isBorrowed = "unavailable"
     }
 
-
-    const Borrow = () => {
-
-        let setBorrowed = {"borrowed": !book.borrowed}
-
-        fetch(`http://localhost:3000/books/${book.id}`, {
-            method:"PATCH",
-            headers: {
-                "Content-type": "application/json"
-            },
-            
-            body: JSON.stringify(setBorrowed)
-        })
-        .then(res => res.json())
-        .then(data => console.log("Success", data))
-        .catch(err => log("error", err))
-        bookBorrowed = !bookBorrowed;
+    let currentBook = (event) =>{
+        localStorage.setItem("currentBook", event.target.id)
     }
+    
+
 </script>
 
 <div>
-    <h3>{book.title}</h3> <p>{book.author}</p>
-    <button on:click={Borrow}>{isBorrowed}</button>
+    <Link to="bookInfo"><h3 on:click={currentBook} id={book.id} >{book.title}</h3></Link> <p>{book.author}</p>
+    <button on:click={borrow(bookBorrowed, book)}>{isBorrowed}</button>
 
     <!-- svelte-ignore a11y-img-redundant-alt -->
-    <img src={book.image} alt="image of the book cover" width="200"/>
+    <Link to="bookInfo"><img on:click={currentBook} id={book.id} src={book.image} alt="image of the book cover" height="300"/></Link>
 </div>
 
 
@@ -43,7 +32,7 @@
     div{
         height: fit-content;
         display: grid;
-        grid-template-rows: 2em 2em auto auto auto;
+        grid-template-rows: 2em 2em 300px auto auto;
         grid-template-columns: 15em;
     }
     p{
@@ -66,5 +55,6 @@
         padding-bottom: 1em;
         padding-top: 1em;
     }
+
 
 </style>

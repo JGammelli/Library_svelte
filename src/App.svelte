@@ -1,10 +1,11 @@
 <script>
-	import Library from "./Library.svelte";
+	import Router from "./routes/index.svelte";
+
+	
 </script>
 
 <main>
-	<h1>Library of Books</h1>
-	<div><Library/></div>
+	<Router/>
 </main>
 
 <style>
@@ -14,17 +15,4 @@
 		padding: 0;
 		margin: 0;
 	}
-	h1{
-		color: whitesmoke;
-		text-align: center;
-	}
-
-	div{
-		position: absolute;
-		width: 50vw;
-		top: 20%; 
-		left: 50%; 
-		transform: translate(-50%, -50%);
-	}
-
 </style>

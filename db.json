@@ -81,7 +81,7 @@
       "id": 12,
       "title": "Winterwood",
       "author": "Shea Ernshaw",
-      "borrowed": false,
+      "borrowed": true,
       "image": "img/winterwood.jpg"
     },
     {
