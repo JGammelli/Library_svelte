@@ -4,4 +4,5 @@ Project was made by using svelte.
 
 To run project:
 npm i 
+
 npm start
