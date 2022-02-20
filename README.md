@@ -2,7 +2,6 @@ This is a library with books that can switch from available to unavailable, usin
 
 Project was made by using svelte.
 
-Npm packege that was used:
-npm i json-server
-npm i npm-run-all
-
+To run project:
+npm i 
+npm start
